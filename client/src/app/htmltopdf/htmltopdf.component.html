@@ -1,0 +1,131 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <h2> Your ride is ready!!!</h2>
+</div>
+
+<div class="invoice-box"
+  id = "contentToConvert">  
+  <table cellpadding="0" cellspacing="0">
+      <tr class="top">
+          <td colspan="2">
+              <table>
+                  <tr>
+                      <td class="title">
+                            
+                          <img src= "{{bookingObj.receipt_url}}"  style="width:100%; max-width:300px;">
+                      </td>
+
+                      <td>
+                          Booking Id : b102<br>
+                          Created: 05/06/2019<br>
+                      </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+
+      <tr class="information">
+          <td colspan="2">
+              <table>
+                  <tr>
+
+
+                      <td>
+                          Pavithra Jayasinghe<br>
+                          Minuwangoda<br>
+                          pavithragayanijayasinghe29@gmail.com
+                      </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+
+      <tr class="heading">
+          <td colspan="2">
+              Car Details
+          </td>
+
+
+      </tr>
+
+      <tr class="item">
+          <td>
+              Car Name
+          </td>
+
+          <td>
+              Car03
+          </td>
+      </tr>
+
+
+
+      <tr class="item">
+          <td>
+              Owner Name
+          </td>
+
+          <td>
+              Sunil Perera
+          </td>
+      </tr>
+
+      <tr class="item">
+          <td>
+              Booking Start Date
+          </td>
+
+          <td>
+              11/06/2019
+          </td>
+      </tr>
+
+      <tr class="item">
+        <td>
+            Booking End Date
+        </td>
+
+        <td>
+            10/06/2019
+        </td>
+    </tr>
+
+
+      <tr class="item">
+        <td>
+            Booking Start Time
+        </td>
+            
+        <td>
+            11:00
+        </td>
+      </tr>
+
+      <tr class="item">
+        <td>
+            Booking End Time
+        </td>
+
+        <td>
+            18:30
+        </td>
+    </tr>
+
+      <tr class="total">
+          <td>Total Amount</td>
+
+          <td>
+             2550.00
+          </td>
+      </tr>
+
+  </table>
+
+  <div class="row">
+    <div class="input-field col s12">
+    <button (click) = "captureScreen()">Download booking details</button>
+    </div>
+</div>  
+
+</div>

@@ -4,6 +4,7 @@ module.exports = function(app) {
   const carModel = require('./models/car');
   const userModel = require('./models/user');
   const bookingModel = require('./models/booking');
+ 
 
   // Initialize routes
   const carRoutes = require('./routes/car-route');
@@ -14,4 +15,5 @@ module.exports = function(app) {
   uploadRoutes(app);
   const bookingRoutes = require('./routes/booking-route');
   bookingRoutes(app);
+
 };

@@ -80,4 +80,6 @@ export class BookingConfirmComponent implements OnInit {
     this.booking.updateBooking(inputs,this.bookingObj._id);
     this.user.updateRating(this.selected2,this.userObj._id);
   }
+
+  
 }

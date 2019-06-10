@@ -16,6 +16,8 @@ import { BookingConfirmComponent } from './booking-details/booking-details.compo
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 import { CarTripsComponent } from './car-trips/car-trips.component';
 import { AllCarsComponent } from './all-cars/all-cars.component';
+import { HtmltopdfComponent } from './htmltopdf/htmltopdf.component';
+
 const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: '', component: LoginPageComponent},
@@ -34,6 +36,8 @@ const routes: Routes = [
   {path: 'allCars/:id' , component: AllCarsComponent},
   {path: '404', component: NotFoundComponentComponent},
   {path: 'bookcar/:id' , component: CarBookingComponent},
+
+  {path: 'pdf', component: HtmltopdfComponent},
  {path: '**', redirectTo: '/404'}
 
 ];
